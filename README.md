@@ -19,7 +19,7 @@ Make sure you have the following software installed on your machine:
 1. Clone the repository:
 
    ```shell
-   git clone <repository-url>
+   git clone https://github.com/syomna/Students-Dashboard.git
    ```
 
 2. Navigate to the project directory:
