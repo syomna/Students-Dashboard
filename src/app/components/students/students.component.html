@@ -1,0 +1,50 @@
+<div class="table-responsive">
+  <table class="table table-hover mt-4">
+    <thead style="background-color: #0077c2; color: #fff">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Email Address</th>
+        <th>Details</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.grade }}</td>
+        <td>{{ student.email }}</td>
+        <td>
+          <button
+            [routerLink]="'/students/' + student.id"
+            class="btn btn-warning"
+          >
+            Details
+          </button>
+        </td>
+        <td>
+          <button
+            class="btn btn-success"
+            (click)="navigateToEditStudent(student)"
+          >
+            Update
+          </button>
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+            mat-raised-button
+            (click)="openDialog(student.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

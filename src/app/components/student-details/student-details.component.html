@@ -1,0 +1,54 @@
+<div *ngIf="isLoading" class="text-center mt-5">
+  <p>Loading...</p>
+</div>
+<div class="container" *ngIf="!isLoading">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card mt-5">
+        <div
+          class="card-header d-flex justify-content-between align-items-center"
+        >
+          <h2 class="mb-0">{{ student.name }}</h2>
+          <i
+            class="bi bi-pencil-square text-primary"
+            style="font-size: 1.5rem"
+            (click)="navigateToEditStudent()"
+          ></i>
+        </div>
+
+        <div class="card-body">
+          <div class="mb-3">
+            <span class="text-primary font-weight-bold-custom">Age:</span>
+            {{ student.age }}
+          </div>
+          <div class="mb-3">
+            <span class="text-primary font-weight-bold-custom">Email:</span>
+            {{ student.email }}
+          </div>
+          <div class="mb-3">
+            <span class="text-primary font-weight-bold-custom">Grade:</span>
+            {{ student.grade }}
+          </div>
+          <div class="mb-3">
+            <span class="text-primary font-weight-bold-custom">Country:</span>
+            {{ student.country }}
+          </div>
+          <div class="mb-3">
+            <span class="text-primary font-weight-bold-custom">Address:</span>
+            {{ student.address }}
+          </div>
+
+          <div class="mb-3">
+            <span class="text-primary font-weight-bold-custom"
+              >Description:</span
+            >
+            {{ student.description }}
+          </div>
+          <!-- <div class="card-footer d-flex justify-content-center bg-white">
+            <button class="btn btn-primary">Update</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

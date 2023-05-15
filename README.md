@@ -1,27 +1,74 @@
-# Task
+# Students Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+This is a simple Angular project showcasing CRUD operations for managing student data. It uses JSON Server as a mock REST API to simulate backend functionality.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To get started with the project, follow the instructions below.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Make sure you have the following software installed on your machine:
 
-## Build
+- Node.js: https://nodejs.org
+- Angular CLI: https://angular.io/cli
+- JSON Server: https://www.npmjs.com/package/json-server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Running unit tests
+1. Clone the repository:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```shell
+   git clone <repository-url>
+   ```
 
-## Running end-to-end tests
+2. Navigate to the project directory:
+   ```shell
+   cd angular-project
+   ```
+3. Install the dependencies:
+   ```shell
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Development Server
 
-## Further help
+1. Navigate to the project directory:
+   ```shell
+   cd angular-project
+   ```
+2. Start the JSON Server to simulate the backend API:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```shell
+   json-server --watch students.json
+   This will start the JSON Server and use the students.json file as the data source.
+
+   ```
+
+3. In a separate terminal, start the Angular development server:
+   ```shell
+   ng serve
+   Navigate to http://localhost:4200/ in your web browser to access the application.
+   ```
+
+### Features
+
+- View a list of students
+- Add a new student
+- Edit an existing student
+- Delete a student
+
+### Technologies Used
+
+- Angular
+- HTML
+- CSS
+- Bootstrap
+- TypeScript
+- JSON Server
+
+### Acknowledgements
+
+- Bootstrap: https://getbootstrap.com
+- ngx-toastr: https://www.npmjs.com/package/ngx-toastr
+- JSON Server: https://www.npmjs.com/package/json-server

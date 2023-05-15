@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between align-items-center">
+  <h2>Students</h2>
+  <a routerLink="/add-student" class="btn btn-warning rounded-2 text-white"
+    >+ Add</a
+  >
+</div>
+<div *ngIf="isLoading" class="text-center mt-5">
+  <p>Loading...</p>
+</div>
+<app-students [students]="students" *ngIf="!isLoading"></app-students>

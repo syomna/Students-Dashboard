@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.toast-container {
+  z-index: 10000;
+  left: 50%;
+  bottom: 2%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.toast-success {
+  background-color: #28a745;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.toast-error {
+  background-color: #dc3545;
+  padding: 10px;
+  border-radius: 8px;
+}
+i {
+  cursor: pointer;
+}
+
+.font-weight-bold-custom {
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+<div class="p-2">
+  <h1 mat-dialog-title class="modal-title">Delete Student</h1>
+  <div mat-dialog-content class="modal-body">
+    Would you like to delete this student?
+  </div>
+  <div mat-dialog-actions class="modal-footer d-flex justify-content-between">
+    <button mat-button [mat-dialog-close]="false" class="btn btn-secondary">
+      Close
+    </button>
+    <button
+      mat-button
+      [mat-dialog-close]="true"
+      cdkFocusInitial
+      class="btn btn-danger"
+    >
+      Confirm
+    </button>
+  </div>
+</div>

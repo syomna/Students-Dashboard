@@ -1,0 +1,54 @@
+{
+  "students": [
+    {
+      "name": "Jessy Smith",
+      "age": 23,
+      "address": "456 Elm St, Anytown USA",
+      "email": "jessysmith@example.com",
+      "id": 1,
+      "grade": "B+",
+      "country": "USA",
+      "description": "Fusce congue, odio id rhoncus laoreet, turpis elit pellentesque ipsum, vitae fermentum risus lectus id tellus."
+    },
+    {
+      "name": "Jane Smith",
+      "age": 24,
+      "address": "456 Elm St, Anytown USA",
+      "email": "janesmith@example.com",
+      "id": 2,
+      "grade": "B+",
+      "country": "USA",
+      "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "age": 24,
+      "address": "789 Oak St, Anytown USA",
+      "email": "bjohnson@example.com",
+      "grade": "A-",
+      "country": "USA",
+      "description": "In aliquet mauris quis est facilisis, at pharetra dui convallis."
+    },
+    {
+      "name": "Yomna Salah",
+      "age": 20,
+      "address": "28 street",
+      "email": "student@gmail.com",
+      "id": 4,
+      "grade": "A+",
+      "country": "Egypt",
+      "description": "Fusce congue, odio id rhoncus laoreet, turpis elit pellentesque ipsum, vitae fermentum risus lectus id tellus."
+    },
+    {
+      "name": "Yo",
+      "age": 25,
+      "address": "25 street",
+      "email": "yomna@example.com",
+      "grade": "B+",
+      "country": "Egypt",
+      "description": "Donec convallis, magna sit amet aliquam ultrices, ligula lacus pellentesque ligula, et dignissim nunc nibh in massa.",
+      "id": 6
+    }
+  ]
+}
