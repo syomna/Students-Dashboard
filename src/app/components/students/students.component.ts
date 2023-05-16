@@ -41,9 +41,10 @@ export class StudentsComponent {
           next: (data) => {
             this.toastr.success('Student deleted successfully');
             console.log('success');
-            setTimeout(() => {
-              window.location.reload();
-            }, 500);
+            this.students = this.students.filter((s) => s.id != this.studentId);
+            // setTimeout(() => {
+            //   window.location.reload();
+            // }, 500);
           },
           error: (error) => {
             this.toastr.success('Error occurred. Please try again later');
